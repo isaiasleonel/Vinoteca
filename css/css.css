@@ -1,0 +1,444 @@
+/* .contenedor {
+  width: min(100% - 1em, 69em);
+  margin: 0 auto;
+} */
+:root {
+  --color-background-card: #fff;
+  --color-nav1: #18061a;
+  --color-nav2: rgb(15, 4, 24);
+  --color--main-footer: #68146e;
+  --color--word: #e49407;
+  --color-btn: #0d6efd;
+  --color-borde: #b3b3b3;
+}
+html {
+  font-family: Old Standard "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.link-nav:hover {
+  background: var(--color--main-footer);
+  color: antiquewhite;
+  box-shadow: 0 0 25px #dd0ef8, 0 0 50px #f4037b;
+}
+
+body {
+  margin: 0;
+}
+body {
+  animation: change 3s infinite alternate linear;
+}
+@keyframes change {
+  0% {
+    background-color: var(--color-nav1);
+  }
+
+  50% {
+    background-color: var(--color-nav2);
+  }
+
+  100% {
+    background-color: black;
+  }
+}
+
+.div-header-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.header_contenedor1 {
+  width: 100%;
+}
+.div-header-logo {
+  background-color: purple;
+  max-height: 5rem;
+  width: 10%;
+  display: grid;
+  place-items: center;
+}
+.div-header-logo:hover {
+  background: var(--color--main-footer);
+  color: antiquewhite;
+  box-shadow: 0 0 25px #dd0ef8, 0 0 50px #f4037b;
+}
+.div-header-logo a .logo {
+  height: 4.9rem;
+}
+header {
+  background-color: black;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  height: 5rem;
+}
+strong {
+  color: white;
+}
+nav a {
+  color: cornsilk;
+}
+nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 1.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+li svg {
+  color: white;
+}
+.btn-search {
+  background-color: var(--color--main-footer);
+  color: var(--color-background-card);
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.btn-search:is(:hover, :focus) {
+  background-color: var(--color--main-footer);
+  color: var(--color-background-card);
+  box-shadow: 0 0 25px #dd0ef8, 0 0 50px #f4037b;
+}
+.search {
+  border-radius: 3px;
+  height: 23px;
+}
+
+.btn_menu {
+  display: none;
+}
+.header_img {
+  background-image: url("https://www.vinosdeayerbe.com.ar/wp-content/uploads/2023/05/Cabezal-VdeA-new-2.png");
+  height: 20rem;
+  background-position: center center;
+  background-size: cover;
+  margin-top: 75px;
+}
+
+.section_img {
+  background-image: url("https://www.vinosdeayerbe.com.ar/wp-content/uploads/2018/11/corchosok-1024x573.jpg");
+  height: 20rem;
+  background-position: center center;
+  background-size: cover;
+}
+
+.section_estreno_wine {
+  margin: 0 3rem 0 18rem;
+}
+.section_estreno_wine .article_wine {
+  margin: 2rem auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+}
+.content_img_article_wine {
+  width: 100%;
+}
+.img_article_wine {
+  height: 22rem;
+  background-image: url("https://www.espaciovino.com.ar/media/default/0001/69/thumb_68329_default_big.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.text_article_wine {
+  background-color: var(--color-background-card);
+  text-align: center;
+}
+
+.text_article_wine p {
+  color: var(--color--word);
+}
+/* --------------------------------section estreno 2------------------------- */
+.section_estreno_wine1 {
+  margin: 0 18rem 0 3rem;
+}
+
+.section_estreno_wine1 .article_wine1 {
+  margin: 2rem auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+}
+.content_img_article_wine1 {
+  width: 100%;
+}
+.img_article_wine1 {
+  height: 22rem;
+  background-image: url("https://www.espaciovino.com.ar/media/default/0001/69/thumb_68204_default_big.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* ---------------------------------CONTACTO-------------------- */
+.contenido {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.377);
+}
+
+.contenido .info {
+  width: 100%;
+  max-width: 40rem;
+  text-align: center;
+  margin-top: 6rem;
+}
+.info h3 {
+  color: whitesmoke;
+  font-size: 2rem;
+}
+.contedor_contactanos {
+  background-color: var(--color-background-card);
+  margin: 4rem 14%;
+  padding: 2rem 10%;
+}
+.form-contacto {
+  margin-left: 10%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+  text-align: center;
+}
+.btn-catalogo {
+  background-color: var(--color--main-footer);
+  padding: 8px 0;
+  color: var(--color-background-card);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: background-color 0.5s;
+}
+.btn-catalogo:is(:hover, :focus) {
+  background-color: var(--color-nav1);
+  color: var(--color-background-card);
+}
+form div input {
+  width: 100%;
+  padding: 5px 15px;
+  border-radius: 3px;
+}
+form div input:focus {
+  outline: 2px solid #242424;
+  background-color: transparent;
+}
+/* -------------------------------CATALOGO------------------------------ */
+.main-catalogo {
+  width: 100%;
+  height: 60rem;
+  display: grid;
+  grid-template-areas: "aside main";
+  margin-top: 8rem;
+  grid-template-columns: 30% 70%;
+}
+.aside-catalogo {
+  background-color: var(--color-background-card);
+  margin-left: 5rem;
+  border-right: solid 1px var(--color-borde);
+}
+.section-catalogo {
+  background-color: var(--color-background-card);
+  margin-right: 5rem;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+}
+.div-list-catalogo {
+  padding: 0.5rem 0 0 8%;
+  line-height: 1.6;
+  font-size: 0.93rem;
+}
+.div-list-catalogo div h3 {
+  padding-left: 8px;
+  border-width: 0 0 0 3px;
+  border-style: solid;
+  line-height: 1;
+  font-weight: 400;
+  border-color: var(--color--word);
+}
+.div-list-catalogo div ul {
+  list-style: none;
+}
+.card-container {
+  background-color: var(--color-background-card);
+  width: 25%;
+  margin: 0 0.5rem;
+  height: fit-content;
+}
+.card-container__img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-container__trip-name {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 0.93rem;
+}
+.card-container__date p {
+  margin: 0 auto;
+  text-align: center;
+}
+.card-container__price {
+  color: var(--color--word);
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card-container__btn-pay {
+  background-color: var(--color-btn);
+  color: var(--color-background-card);
+  font-size: 16px;
+  overflow: hidden;
+  transition: 0.5s;
+  border: 1px solid white;
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px 0;
+}
+.card-container__btn-pay:hover {
+  background-color: #21ba71;
+}
+
+.card-body {
+  height: 7rem;
+}
+
+.card__sale::before {
+  content: "Oferta";
+  font-size: 1.2rem;
+  text-align: end;
+  font-family: "Poppins";
+  font-weight: bold;
+  width: auto;
+  height: auto;
+  padding: 1px 3px;
+  /* border-radius: 15px; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff650;
+}
+.oferta {
+  color: #21ba71;
+  font-size: 1rem;
+}
+.card-container__price
+
+/* ------------------------FOOTER----------------------------------- */
+
+footer {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  flex-direction: column;
+}
+.div-footer-inner {
+  background-color: rgb(15, 1, 13);
+  color: white;
+  width: 100%;
+}
+.div-footer-copirigth {
+  background-color: black;
+  color: aliceblue;
+}
+
+.div-box-footer {
+  display: flex;
+}
+.box-footer-1,
+.box-footer-2 {
+  height: 255px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+}
+.div-footer-copirigth h6 {
+  margin: auto;
+}
+
+.div-footer-copirigth h6 {
+  text-align: center;
+}
+.danger {
+  color: red;
+  font-weight: bolder;
+  animation: danger 3s alternate;
+}
+@keyframes danger {
+  0% {
+    font-size: 1rem;
+  }
+  50% {
+    font-size: 1.2rem;
+  }
+  100% {
+    font-size: 1rem;
+  }
+}
+.correct {
+  color: green;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 750px) {
+  .contenedor {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+  header {
+    grid-area: header;
+  }
+  section {
+    grid-area: main;
+  }
+  aside {
+    grid-area: aside;
+  }
+  footer {
+    grid-area: footer;
+  }
+  .section_estreno_wine,
+  .section_estreno_wine1 {
+    margin: auto;
+  }
+  .aside-catalogo {
+    margin: initial;
+  }
+  .section-catalogo {
+    margin: initial;
+  }
+}
