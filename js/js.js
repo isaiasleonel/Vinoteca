@@ -1,4 +1,5 @@
 "use strict";
+// ---------------------Formulario-------------
 let enviar = document.querySelector("#enviar");
 enviar.addEventListener("click", verificarFormulario);
 
@@ -11,6 +12,9 @@ function verificarFormulario(e) {
     datosRegis.innerHTML = "Por favor rellene todas las casillas";
     datosRegis.classList.add("danger");
     datosRegis.classList.remove("correct");
+    setTimeout(() => {
+      datosRegis.innerHTML = " ";
+    }, 4000);
   } else {
     datosRegis.innerHTML = "Enviado";
     datosRegis.classList.add("correct");
