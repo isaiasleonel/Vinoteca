@@ -1,6 +1,4 @@
-// -------------------Modal----------------
 "use strict";
-
 const close = document.querySelector(".cerrar_modal");
 const open = document.querySelector(".btn-carrito");
 const modal = document.querySelector(".modal");

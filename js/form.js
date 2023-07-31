@@ -17,9 +17,6 @@ function verificarFormulario(e) {
     dateRegister.innerHTML = "Por favor rellene todas las casillas e ingrese un email valido";
     dateRegister.classList.add("danger");
     dateRegister.classList.remove("correct");
-    setTimeout(() => {
-      dateRegister.innerHTML = " ";
-    }, 4000);
   } else {
     dateRegister.innerHTML = "Enviado";
     dateRegister.classList.add("correct");
