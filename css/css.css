@@ -241,7 +241,7 @@ video {
 
 /* ------------------------GALERY---------------------- */
 .section-gallery {
-  max-width: 950px;
+  max-width: 900px;
   margin-inline: auto;
   padding: 100px 15px;
 }
@@ -280,7 +280,7 @@ video {
   flex: 1;
   height: 500px;
   background-color: var(--black);
-  padding: 25px;
+  padding: 40px;
   opacity: 1;
   overflow: hidden;
   transition: flex 0.5s, opacity 0.25s;

@@ -12,10 +12,10 @@ function mostrar() {
             <div class="card-body">
                 <p class="card-container__trip-name" >${vino.name}</p>
                 <div class="card-container__date">
-                    <p class="oferta"> ¡Oferta relampago!</p>
+                    <p class="oferta"> ${vino.region}</p>
                 </div>
                 <p class="card-container__price">$${vino.price}</p>
-                <button class="card-container__btn-pay">AGREGAR</button>
+                <button id="btn-catalogue-${vino.id} " class="card-container__btn-pay">AGREGAR</button>
             </div>
         </div>
     </div>`;
