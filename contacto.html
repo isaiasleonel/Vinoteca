@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/css.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300;600&display=swap"
+    rel="stylesheet">
   <title>CONTACTO</title>
 </head>
 
@@ -23,8 +24,29 @@
             <ul>
               <li><a class="link-nav" href="catalogo.html">CATALOGO</a></li>
               <li>
-                <input type="search" class="search" placeholder="Search" aria-label="Search">
-                <button class="btn-search" type="submit">Search</button>
+                <form class="form">
+                  <label for="search">
+                    <input required="" autocomplete="off" placeholder="search..." id="search" type="text">
+                    <div class="icon">
+                      <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" class="swap-on">
+                        <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linejoin="round"
+                          stroke-linecap="round"></path>
+                      </svg>
+                      <svg stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" class="swap-off">
+                        <path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linejoin="round" stroke-linecap="round"></path>
+                      </svg>
+                    </div>
+                    <button type="reset" class="close-btn">
+                      <svg viewBox="0 0 20 20" class="h-5 w-5" xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd"
+                          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                          fill-rule="evenodd"></path>
+                      </svg>
+                    </button>
+                  </label>
+                </form>
               </li>
               <li><a class="link-nav" href="contacto.html"> CONTACTO</a></li>
               <li> <a class="link-nav btn-carrito" href="#">
@@ -42,47 +64,50 @@
     <main>
       <section class="section_img"></section>
       <section class="section-contactanos">
-      <div class="contenido">
-        <div class="info">
-          <h3 color="white" class="titulo-portada">CONTACTANOS</h3>
+        <div class="contenido">
+          <div class="info">
+            <h3 color="white" class="titulo-portada">CONTACTANOS</h3>
+          </div>
         </div>
-      </div>
-      <div class="contedor_contactanos">
-        <div>
-          <h1> CONTACTANOS</h1>
+        <div class="contedor_contactanos">
+          <div>
+            <h1> CONTACTANOS</h1>
+          </div>
+          <div class="parrafo_contactanos">
+            <p>Gracias por visitarnos y conocer nuestros vinos y nuestros contenidos sobre el vino y su cultura. Si
+              buscas
+              otros vinos por favor envíanos tu lista.</p>
+            <p>Argentina produce vinos maravillosos en diferentes estilos y terruños y nos hemos propuesto descubrirlos
+              para poder compartirlos y llevarlos a tu mesa en cualquier rincón del país</p>
+            <p>Nos interesa conocer tu opinión y que nos hagas llegar tus consultas y sugerencias</p>
+            <p>Completa el formulario y te responderemos inmediatamente.</p>
+          </div>
+          <div class="cont-form">
+            <form class="form-contacto">
+              <h3> Te escuchamos para brindar lo mejor </h3>
+              <div class="input">
+                <input required="" id="name" autocomplete="off" type="text">
+                <label for="name">Name</label>
+              </div>
+              <div class="input">
+                <input required="" id="email" name="email" type="text">
+                <label for="email">E-mail</label>
+              </div>
+              <button id="enviar" type="submit" class="btn-catalogo">Enviar</button>
+              <span id="datosRegis"></span>
+          </div>
+          </form>
         </div>
-        <div class="parrafo_contactanos">
-          <p>Gracias por visitarnos y conocer nuestros vinos y nuestros contenidos sobre el vino y su cultura. Si buscas
-            otros vinos por favor envíanos tu lista.</p>
-          <p>Argentina produce vinos maravillosos en diferentes estilos y terruños y nos hemos propuesto descubrirlos
-            para poder compartirlos y llevarlos a tu mesa en cualquier rincón del país</p>
-          <p>Nos interesa conocer tu opinión y que nos hagas llegar tus consultas y sugerencias</p>
-          <p>Completa el formulario y te responderemos inmediatamente.</p>
+      </section>
+      <section class="modal">
+        <div class="modal_container">
+          <img class="img_modal" src="https://www.espaciovino.com.ar/media/default/0001/69/thumb_68329_default_big.jpeg"
+            height="80px" alt="">
+          <h2 class="modal_title">¡Bienvenido al Ayarbe!</h2>
+          <p class="modal_p"> Muy pronto estara andando nuestro servicios en WEB </p>
+          <a href="*" class="cerrar_modal"> cerrar</a>
         </div>
-        <div class="cont-form">
-          <form class="form-contacto">
-            <h3> Te escuchamos para brindar lo mejor </h3>
-            <div>
-              <input id="name" type="text" required aria-describedby="emailHelp" placeholder="Nombre">
-            </div>
-            <div>
-              <input id="email" type="text" placeholder="Email" required>
-            </div>
-            <button id="enviar" type="submit" class="btn-catalogo">Enviar</button>
-            <span id="datosRegis"></span>
-        </div>
-        </form>
-      </div>
-    </section>
-    <section class="modal">
-      <div class="modal_container">
-        <img class="img_modal" src="https://www.espaciovino.com.ar/media/default/0001/69/thumb_68329_default_big.jpeg"
-          height="80px" alt="">
-        <h2 class="modal_title">¡Bienvenido al Ayarbe!</h2>
-        <p class="modal_p"> Muy pronto estara andando nuestro servicios en WEB </p>
-        <a href="*" class="cerrar_modal"> cerrar</a>
-      </div>
-    </section>
+      </section>
     </main>
     <footer>
       <div class="div-footer-inner">
