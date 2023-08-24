@@ -6,7 +6,7 @@ function mostrar() {
     card.innerHTML = '';
     for (const vino of bodega) {
         card.innerHTML +=
-            ` <div class="card-container">
+            ` <div class="card-container" data-text="Oferta!">
             <div>
             <img src= "${vino.thumb}" class="card-container__img" width= "120" height = "20"/>
             <div class="card-body">

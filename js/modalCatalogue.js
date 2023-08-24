@@ -14,7 +14,7 @@ close.addEventListener("click", (e) => {
 });
 
 // ------------------btn-menu-toggle-------------
-const menu = document.querySelector(".header_contenedor1");
+const menu = document.querySelector(".conteiner-nav");
 const btnMenu = document.querySelector("#btn-menu").addEventListener("click", (e) => {
     menu.classList.toggle("activado");
 });
