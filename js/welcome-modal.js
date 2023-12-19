@@ -5,7 +5,7 @@ const closeWelcome = document.querySelector(".cerrar_modal_welcome");
 
 if (!localStorage.getItem("first-time")) {
     header.classList.add("close-header");
-    modalWelcome.classList.add("modal--show-welcome");
+    modalWelcome.classList.add("modal_welcome");
 
 
     closeWelcome.addEventListener("click", (e) => {
